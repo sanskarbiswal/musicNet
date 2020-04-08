@@ -1,0 +1,22 @@
+html,body{
+    background: #666666;
+}
+
+.label-image{
+    height: 50px;
+    width: auto;
+}
+
+.URLbar{
+    margin-top: 15vh;
+    margin-left: 10vw;
+    width: 80%;
+}
+
+.player{
+    height: 15vh
+}
+
+.w3-card-4{
+    background: #212121;
+}

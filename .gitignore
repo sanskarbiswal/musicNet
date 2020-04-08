@@ -1,2 +1,5 @@
 # Virtual Env
 venv/
+
+# debug file
+*.log

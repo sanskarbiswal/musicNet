@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>musicNet</title>
+        <!-- Meta Data -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Sanskar Biswal">
+        <!-- CSS -->
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <!-- Scripts -->
+        <script type="text/javascript" src="/eel.js"></script>
+        <script type="text/javascript" src="js/main.js"></script>
+    </head>
+    <body>
+        <!-- Nav Bar -->
+        <div class="w3-bar w3-white">
+            <div class="w3-bar-item">
+                <img class="w3-image label-image" src="img/lab1.png">
+            </div>
+            <div class="w3-bar-item w3-right">
+                <button class="w3-button w3-circle">
+                    <i class="fa fa-user-circle-o fa-lg" aria-hidden="true"></i>
+                </button>    
+            </div>
+        </div>
+        <!-- URL Input Bar -->
+        <div class="w3-conatiner w3-border URLbar w3-card-4 w3-text-white w3-round-xlarge">
+            <div class="w3-form w3-row">
+                <input id="t_URL" type="text" required placeholder="URL Link" class="w3-round-xlarge w3-input w3-twothird">
+                <div class="w3-row w3-third">
+                    <div class="w3-half">
+                        <button id="t_playlist" class="w3-button w3-bar" onclick="playFromURL()">play</button>
+                    </div>
+                    <div class="w3-half">
+                        <button id="t_playlist" type="submit" class="w3-button w3-bar">playList</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br><br>
+        <!-- User Control Panel -->
+        <div class="w3-container w3-card-4 w3-margin w3-round-xlarge">
+            <div class="w3-bar w3-large w3-center w3-padding w3-text-white">DASHBOARD</div>
+            <div class="w3-row">
+                <!-- Display Playlists -->
+                <div class="w3-padding"></div>
+                <!-- Display Songs in Playlists -->
+            </div>
+        </div>
+        <br><br>
+        <!-- Player -->
+        <div class="w3-container w3-card-4 w3-margin w3-round-xlarge">
+            <div class="w3-row">
+                <!-- Thumbnail Section -->
+                <div class="w3-quarter w3-center">
+                    <div class="w3-padding">
+                        <img id="thumb_img" src="img/logo.PNG" class="w3-image">
+                    </div>
+                </div>
+                <!-- Player Section -->
+                <div class="w3-threequarter w3-center player w3-text-white">
+                    <div class="w3-margin-top">
+                        <audio id="audSrc" controls>
+                            <source  src="">
+                        </audio>
+                    </div>
+                    <div id="music_name" class="w3-bar w3-text"></div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="w3-bar w3-bottom w3-center w3-white">
+            <div class="w3-padding-16 w3-center">Developed by Sanskar Biswal</div>
+        </div>
+    </body>
+</html>

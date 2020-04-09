@@ -3,3 +3,6 @@ venv/
 
 # debug file
 debug.log
+
+# User Files Generated while Testing
+user/

@@ -25,6 +25,13 @@ def generate_url(url):
     url = best.url
     eel.music_url(url, metaData)
 
+# @brief Handle Operations in System File
+@eel.expose
+def on_SysStart():
+    # Check and Manage File System
+    if not os.path.exists('user/'):
+        print("Creating User Directory")
+        #os.mkdir('user')
 # @define testing flow of code
 @eel.expose
 def test():
@@ -44,6 +51,5 @@ if __name__ == "__main__":
         'mode' : "chrome",
         'close_callback' : handle_exit
     }
-    #generate_url(url)
     eel.start('main.html', options=app_opt, size=size, suppress_error=True)
     

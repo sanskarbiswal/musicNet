@@ -6,6 +6,9 @@ function playFromURL(){
     eel.generate_url(url);
     //eel.test();
 }
+function appStart(){
+    eel.on_SysStart();
+}
 // EEL Exposed Functions
 eel.expose(music_url);
 function music_url(url, metaData){
@@ -15,3 +18,10 @@ function music_url(url, metaData){
     // Start Music
     document.getElementById('audSrc').setAttribute('src', url);
 }
+
+eel.expose(create_user_modal);
+function create_user_modal(){
+    
+}
+
+window.onload=appStart;
